@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo01Classes", "Demo01Clas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExerciceChaise", "ExerciceChaise\ExerciceChaise.csproj", "{CA762CAC-9BD2-494C-AB77-0C6B404D295C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice02Salarie", "Exercice02Salarie\Exercice02Salarie.csproj", "{80FEA267-7B51-4E60-93ED-4B6E70D3D873}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice02Salarie", "Exercice02Salarie\Exercice02Salarie.csproj", "{80FEA267-7B51-4E60-93ED-4B6E70D3D873}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice03Pendu", "Exercice03Pendu\Exercice03Pendu.csproj", "{015E0E71-E2E5-4270-99EF-5123A178D7A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice04Citerne", "Exercice04Citerne\Exercice04Citerne.csproj", "{33340BC5-14C1-46B0-AB7A-23701DCE0E56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{80FEA267-7B51-4E60-93ED-4B6E70D3D873}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80FEA267-7B51-4E60-93ED-4B6E70D3D873}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80FEA267-7B51-4E60-93ED-4B6E70D3D873}.Release|Any CPU.Build.0 = Release|Any CPU
-		{015E0E71-E2E5-4270-99EF-5123A178D7A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{015E0E71-E2E5-4270-99EF-5123A178D7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{015E0E71-E2E5-4270-99EF-5123A178D7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{015E0E71-E2E5-4270-99EF-5123A178D7A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33340BC5-14C1-46B0-AB7A-23701DCE0E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33340BC5-14C1-46B0-AB7A-23701DCE0E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33340BC5-14C1-46B0-AB7A-23701DCE0E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33340BC5-14C1-46B0-AB7A-23701DCE0E56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
