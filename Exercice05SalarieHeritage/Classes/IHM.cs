@@ -13,6 +13,11 @@ namespace Exercice05SalarieHeritage.Classes
         private int compteurEmployes = 0;
 
 
+        public IHM()
+        {
+            employes = new Salarie[maxEmployes];
+        }
+
         
     }
 }
