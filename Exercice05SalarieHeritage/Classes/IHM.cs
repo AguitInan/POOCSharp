@@ -40,7 +40,23 @@ namespace Exercice05SalarieHeritage.Classes
                     }
                 }
 
-                
+                switch (choix)
+                {
+                    case "1":
+                        Console.Clear();
+                        CreationEmploye();
+                        break;
+                    case "2":
+                        Console.Clear();
+                        SalaireEmployes();
+                        break;
+                    case "3":
+                        Console.Clear();
+                        RechercheEmploye();
+                        break;
+                    case "0":
+                        break;
+                }
 
 
 
