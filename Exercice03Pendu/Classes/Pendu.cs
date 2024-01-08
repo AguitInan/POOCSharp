@@ -45,7 +45,12 @@ namespace Exercice03Pendu.Classes
                     masqueTmp += masque[i];
                 }
             }
-            
+            masque = masqueTmp;
+            if (found == false)
+            {
+                nbEssai--;
+            }
+            return found;
         }
 
         public bool TestWin()
