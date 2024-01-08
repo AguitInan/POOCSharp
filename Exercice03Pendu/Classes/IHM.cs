@@ -66,6 +66,24 @@ namespace Exercice03Pendu.Classes
                     // Néttoyage console pour un nouvel essai
                     Console.Clear();
                 }
+                // Test si nombre d'essai = 0
+                if (pendu.NbEssai == 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Vous avez perdu...\n");
+                    Console.WriteLine("Le mot à trouver était : {0}" + Environment.NewLine, pendu.MotATrouve);
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+                Console.WriteLine("Une nouvelle partie ? Oui / Non : ");
+                reponse = Console.ReadLine().ToUpper();
+                if (reponse == "NON")
+                {
+                    Console.WriteLine("A bientôt !");
+                    Console.WriteLine("Appuyez sur Enter pour fermer le programme...");
+                    Console.Read();
+                }
+                ok = false;
+                Console.Clear();
             } while (reponse != "NON");
         }
     }
