@@ -51,7 +51,20 @@ namespace Exercice03Pendu.Classes
                         Console.WriteLine("Bravo vous avez trouvé une lettre");
                     else
                         Console.WriteLine("Et non...");
-                    
+                    // Test Si le jeu est gagné
+                    if (pendu.TestWin())
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("\nBravo! Vous avez gagné ! ! ! \n");
+                        Console.WriteLine("le mot à trouver était {0}" + Environment.NewLine, pendu.MotATrouve);
+                        Console.ForegroundColor = ConsoleColor.White;
+                        pendu.NbEssai = -1;
+                        break;
+                    }
+                    Console.WriteLine("Appuyez sur Enter pour proposer une autre lettre...");
+                    Console.ReadLine();
+                    // Néttoyage console pour un nouvel essai
+                    Console.Clear();
                 }
             } while (reponse != "NON");
         }
