@@ -139,6 +139,21 @@ namespace Exercice05SalarieHeritage.Classes
             int commission = Convert.ToInt32(Console.ReadLine());
             return new Commercial(tmp.Matricule, tmp.Categorie, tmp.Service, tmp.Nom, tmp.Salaire, chiffreAffaire, commission);
         }
+        private void SalaireEmployes()
+        {
+            Console.WriteLine("====== Salaire de Employés =====");
+            for (int i = 0; i < compteurEmployes; i++)
+            {
+                Console.WriteLine("------------");
+                Console.WriteLine(employes[i].GetType());
+                employes[i].ToString();
+
+                if (employes[i] is Commercial c)
+                    c.AfficherCommercial();
+                employes[i].CalculerSalaire();
+                Console.WriteLine("--------------");
+            }
+        }
         
     }
 }
