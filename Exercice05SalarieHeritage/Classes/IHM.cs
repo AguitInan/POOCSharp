@@ -95,7 +95,24 @@ namespace Exercice05SalarieHeritage.Classes
                     Console.ForegroundColor = ConsoleColor.White;
                 }
             }
-            
+            Salarie s = null;
+            switch (choix)
+            {
+                case "1":
+                    s = CreationSalarie();
+                    break;
+                case "2":
+                    s = CreationCommercial();
+                    break;
+                case "0":
+                    break;
+            }
+            if (s != null)
+            {
+                employes[compteurEmployes] = s;
+                compteurEmployes++;
+            }
+            Console.Clear();
         }
 
         
