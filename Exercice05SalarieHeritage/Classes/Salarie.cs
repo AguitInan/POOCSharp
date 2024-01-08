@@ -45,7 +45,10 @@ namespace Exercice05SalarieHeritage.Classes
             this.Salaire = salaire;
         }
 
-
+        public virtual void CalculerSalaire()
+        {
+            Console.WriteLine("Le salaire fixe de " + Nom + " est de " + Salaire + " euros");
+        }
 
     }
 }
