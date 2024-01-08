@@ -29,6 +29,14 @@ namespace Exercice03Pendu.Classes
         public int NbEssai { get => nbEssai; set => nbEssai = value; }
         public string Masque { get => masque; set => masque = value; }
 
+        public void GenererMasque()
+        {
+            masque = "";
+            for (int i = 0; i < MotATrouve.Length; i++)
+            {
+                masque += "*";
+            }
+        }
 
     }
 }
