@@ -17,6 +17,9 @@ namespace Exercice05SalarieHeritage.Classes
             this.commission = commission;
         }
 
-        
+        public decimal ChiffreAffaire { get => chiffreAffaire; set => chiffreAffaire = value; }
+        public int Commission { get => commission; set => commission = value; }
+
+
     }
 }
