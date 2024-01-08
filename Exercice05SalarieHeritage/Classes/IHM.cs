@@ -115,6 +115,21 @@ namespace Exercice05SalarieHeritage.Classes
             Console.Clear();
         }
 
+        private Salarie CreationSalarie()
+        {
+            Console.Write("Merci de saisir le nom : ");
+            string nom = Console.ReadLine();
+            Console.Write("Merci de saisir le matricule : ");
+            string matricule = Console.ReadLine();
+            Console.Write("Merci de saisir la catégorie : ");
+            String categorie = Console.ReadLine();
+            Console.Write("Merci de saisir le service : ");
+            string service = Console.ReadLine();
+            Console.Write("Merci de saisir le salaire : ");
+            decimal salaire = Convert.ToDecimal(Console.ReadLine());
+            return new Salarie(matricule, categorie, service, nom, salaire);
+        }
+
         
     }
 }
