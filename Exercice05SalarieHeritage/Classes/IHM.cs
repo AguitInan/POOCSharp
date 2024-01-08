@@ -160,7 +160,18 @@ namespace Exercice05SalarieHeritage.Classes
             Console.Write("Merci de saisir le nom : ");
             string nom = Console.ReadLine();
             Salarie s = null;
-
+            for (int i = 0; i < compteurEmployes; i++)
+            {
+                if (employes[i].Nom == nom)
+                {
+                    s = employes[i];
+                    break;
+                }
+            }
+            if (s != null)
+                s.CalculerSalaire();
+            else
+                Console.WriteLine("Aucun employé n'a été trouvé avec ce nom...");
         }
 
 
