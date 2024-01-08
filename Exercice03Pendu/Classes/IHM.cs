@@ -18,7 +18,27 @@ namespace Exercice03Pendu.Classes
             GenerateurDeMot mot = new GenerateurDeMot();
             Pendu pendu = new Pendu(mot);
 
-            
+            do
+            {
+                while (!ok)
+                {
+                    Console.Write("Combiens d'essais souhaitez-vous ? : ");
+                    if (int.TryParse(Console.ReadLine(), out int nb))
+                    {
+                        pendu = new Pendu(mot, nb);
+                        ok = true;
+                        Console.Clear();
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("\tErreur de saisie, merci de rentrer un nombre/Chiffre");
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                }
+
+                
+            } while (reponse != "NON");
         }
     }
 }
