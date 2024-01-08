@@ -23,6 +23,12 @@ namespace Exercice05SalarieHeritage.Classes
 
         public static int Compteur { get => compteur; }
 
+        public Salarie()
+        {
+            // Console.WriteLine("Constructeur par défaut");
+            compteur++;
+        }
+
        
 
     }
