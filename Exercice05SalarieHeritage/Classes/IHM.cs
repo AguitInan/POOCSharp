@@ -130,6 +130,15 @@ namespace Exercice05SalarieHeritage.Classes
             return new Salarie(matricule, categorie, service, nom, salaire);
         }
 
+        private Commercial CreationCommercial()
+        {
+            Salarie tmp = CreationSalarie();
+            Console.Write("Merci de saisir le chiffre du commercial : ");
+            decimal chiffreAffaire = Convert.ToDecimal(Console.ReadLine());
+            Console.Write("Merci de saisir la commission : ");
+            int commission = Convert.ToInt32(Console.ReadLine());
+            return new Commercial(tmp.Matricule, tmp.Categorie, tmp.Service, tmp.Nom, tmp.Salaire, chiffreAffaire, commission);
+        }
         
     }
 }
