@@ -174,7 +174,10 @@ namespace Exercice05SalarieHeritage.Classes
                 Console.WriteLine("Aucun employé n'a été trouvé avec ce nom...");
         }
 
-
+        private int AvoirNombreEmployes()
+        {
+            return Salarie.Compteur;
+        }
     }
 }
 
