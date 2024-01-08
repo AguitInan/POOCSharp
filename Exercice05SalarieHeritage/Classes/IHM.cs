@@ -8,6 +8,11 @@ namespace Exercice05SalarieHeritage.Classes
 {
     class IHM
     {
+        private Salarie[] employes;
+        private int maxEmployes = 20;
+        private int compteurEmployes = 0;
+
+
         
     }
 }
