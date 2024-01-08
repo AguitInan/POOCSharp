@@ -36,6 +36,15 @@ namespace Exercice05SalarieHeritage.Classes
         }
 
 
+        // En utilisant ce constructeur, on appelle le constructeur Salarie avec un parametre (nom) avant
+        public Salarie(string matricule, string categorie, string service, string nom, decimal salaire) : this(nom)
+        {
+            this.matricule = matricule;
+            this.categorie = categorie;
+            this.service = service;
+            this.Salaire = salaire;
+        }
+
 
 
     }
