@@ -62,6 +62,14 @@ namespace Exercice05SalarieHeritage.Classes
 
             } while (choix != "0");
         }
+        private void MenuPrincipal()
+        {
+            Console.WriteLine("1-- Ajouter un employé");
+            Console.WriteLine("2-- Afficher le salaire des employés");
+            Console.WriteLine("3-- Rechercher un employé");
+            Console.WriteLine("0-- Quitter\n");
+        }
+
         
     }
 }
