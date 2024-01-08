@@ -20,7 +20,11 @@ namespace Exercice03Pendu.Classes
             GenererMasque();
             nbEssai = 10;
         }
-        
+        public Pendu(GenerateurDeMot g, int n) : this(g)
+        {
+            nbEssai = n;
+        }
+
 
     }
 }
