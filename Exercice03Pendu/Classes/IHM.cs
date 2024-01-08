@@ -37,7 +37,22 @@ namespace Exercice03Pendu.Classes
                     }
                 }
 
-                
+                while (pendu.NbEssai > 0)
+                {
+                    // Information Utilisateur
+                    Console.WriteLine("------ Le jeu du Pendu ------");
+                    Console.WriteLine("Le mot à trouver est : {0}", pendu.Masque);
+                    Console.WriteLine("Il vous reste {0} essai(s)", pendu.NbEssai);
+                    Console.Write("Veuillez saisir une lettre : ");
+                    // Récupération de la saisie Utilisateur
+                    lettre = Convert.ToChar(Console.ReadLine().ToLower());
+                    // Envoie de la saisie de l'utilisateur à TestChar() et en récupère la réponse
+                    if (pendu.TestChar(lettre))
+                        Console.WriteLine("Bravo vous avez trouvé une lettre");
+                    else
+                        Console.WriteLine("Et non...");
+                    
+                }
             } while (reponse != "NON");
         }
     }
