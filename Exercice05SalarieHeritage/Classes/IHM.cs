@@ -18,6 +18,34 @@ namespace Exercice05SalarieHeritage.Classes
             employes = new Salarie[maxEmployes];
         }
 
+        public void Start()
+        {
+            string choix = "";
+            do
+            {
+                bool valid = false;
+                Console.WriteLine("========== Gestion des employés =========");
+                MenuPrincipal();
+                Console.Write("Entrez votre choix : ");
+                choix = Console.ReadLine();
+                while (valid)
+                {
+                    if (choix == "1" && choix == "2" && choix == "3" && choix == "0")
+                        valid = true;
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("Erreur de saisie, entrez votre choix : ");
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                }
+
+                
+
+
+
+            } while (choix != "0");
+        }
         
     }
 }
