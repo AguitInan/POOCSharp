@@ -29,6 +29,15 @@ namespace Exercice03Pendu.Classes
         public int NbEssai { get => nbEssai; set => nbEssai = value; }
         public string Masque { get => masque; set => masque = value; }
 
+        public bool TestWin()
+        {
+            if (motATrouve == masque && NbEssai > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public void GenererMasque()
         {
             masque = "";
