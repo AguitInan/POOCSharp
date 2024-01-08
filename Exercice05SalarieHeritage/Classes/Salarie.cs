@@ -29,7 +29,14 @@ namespace Exercice05SalarieHeritage.Classes
             compteur++;
         }
 
-       
+        // En utilisant ce constructeur, on appelle le constructeur Salarie par défaut avant
+        public Salarie(string nom) : this()
+        {
+            this.nom = nom;
+        }
+
+
+
 
     }
 }
