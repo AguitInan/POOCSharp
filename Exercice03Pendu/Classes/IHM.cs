@@ -63,7 +63,7 @@ namespace Exercice03Pendu.Classes
                     }
                     Console.WriteLine("Appuyez sur Enter pour proposer une autre lettre...");
                     Console.ReadLine();
-                    // Néttoyage console pour un nouvel essai
+                    // Nettoyage console pour un nouvel essai
                     Console.Clear();
                 }
                 // Test si nombre d'essai = 0
