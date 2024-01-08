@@ -78,6 +78,26 @@ namespace Exercice05SalarieHeritage.Classes
             Console.WriteLine("0-- Retour\n");
         }
 
+        private void CreationEmploye()
+        {
+            bool valid = false;
+            MenuCreationEmploye();
+            Console.Write("Entrer votre choix : ");
+            string choix = Console.ReadLine();
+            while (valid)
+            {
+                if (choix == "1" && choix == "2" && choix == "0")
+                    valid = true;
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write("Erreur de saisie, entrez votre choix : ");
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+            }
+            
+        }
+
         
     }
 }
