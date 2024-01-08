@@ -25,6 +25,10 @@ namespace Exercice03Pendu.Classes
             nbEssai = n;
         }
 
+        public string MotATrouve { get => motATrouve; set => motATrouve = value; }
+        public int NbEssai { get => nbEssai; set => nbEssai = value; }
+        public string Masque { get => masque; set => masque = value; }
+
 
     }
 }
