@@ -29,6 +29,25 @@ namespace Exercice03Pendu.Classes
         public int NbEssai { get => nbEssai; set => nbEssai = value; }
         public string Masque { get => masque; set => masque = value; }
 
+        public bool TestChar(char c)
+        {
+            bool found = false;
+            string masqueTmp = "";
+            for (int i = 0; i < MotATrouve.Length; i++)
+            {
+                if (MotATrouve[i] == c)
+                {
+                    found = true;
+                    masqueTmp += c;
+                }
+                else
+                {
+                    masqueTmp += masque[i];
+                }
+            }
+            
+        }
+
         public bool TestWin()
         {
             if (motATrouve == masque && NbEssai > 0)
