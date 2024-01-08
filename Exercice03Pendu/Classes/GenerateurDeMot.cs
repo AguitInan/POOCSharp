@@ -10,6 +10,11 @@ namespace Exercice03Pendu.Classes
     {
         private string[] mots = new string[] { "tekken", "streetfighter", "kingoffighters", "virtuafighter", "guiltygear", "fatalfury" };
 
-        
+        public string Generer()
+        {
+            Random r = new Random();
+            int randomIndex = r.Next(mots.Length);
+            return mots[randomIndex];
+        }
     }
 }
