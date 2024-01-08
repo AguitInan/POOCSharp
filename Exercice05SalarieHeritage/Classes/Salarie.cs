@@ -15,7 +15,15 @@ namespace Exercice05SalarieHeritage.Classes
         private decimal salaire;
         private static int compteur = 0;
 
-        
+        public string Matricule { get => matricule; set => matricule = value; }
+        public string Categorie { get => categorie; set => categorie = value; }
+        public string Service { get => service; set => service = value; }
+        public string Nom { get => nom; set => nom = value; }
+        public decimal Salaire { get => salaire; set => salaire = value; }
+
+        public static int Compteur { get => compteur; }
+
+       
 
     }
 }
