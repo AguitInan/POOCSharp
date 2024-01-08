@@ -70,6 +70,14 @@ namespace Exercice05SalarieHeritage.Classes
             Console.WriteLine("0-- Quitter\n");
         }
 
+        private void MenuCreationEmploye()
+        {
+            Console.WriteLine("====== Ajoué un employé ======");
+            Console.WriteLine("1-- Salarié");
+            Console.WriteLine("2-- Commercial");
+            Console.WriteLine("0-- Retour\n");
+        }
+
         
     }
 }
