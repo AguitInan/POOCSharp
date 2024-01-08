@@ -20,7 +20,12 @@ namespace Exercice05SalarieHeritage.Classes
         public decimal ChiffreAffaire { get => chiffreAffaire; set => chiffreAffaire = value; }
         public int Commission { get => commission; set => commission = value; }
 
-
+        public override void CalculerSalaire()
+        {
+            base.CalculerSalaire();
+            decimal salaireReel = Salaire + ChiffreAffaire * Commission / 100;
+            Console.WriteLine("Le salaire avec commission de {0} est de {1} euros.", Nom, salaireReel);
+        }
 
         public void AfficherCommercial()
         {
