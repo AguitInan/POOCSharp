@@ -8,6 +8,9 @@ namespace Exercice05SalarieHeritage.Classes
 {
     class Commercial : Salarie
     {
+        decimal chiffreAffaire;
+        int commission;
+
         
     }
 }
