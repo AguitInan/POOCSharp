@@ -21,5 +21,10 @@ namespace Exercice05SalarieHeritage.Classes
         public int Commission { get => commission; set => commission = value; }
 
 
+
+        public void AfficherCommercial()
+        {
+            Console.WriteLine("Je suis un commercial");
+        }
     }
 }
