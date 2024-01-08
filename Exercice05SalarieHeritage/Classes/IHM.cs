@@ -154,7 +154,16 @@ namespace Exercice05SalarieHeritage.Classes
                 Console.WriteLine("--------------");
             }
         }
-        
+        private void RechercheEmploye()
+        {
+            Console.WriteLine("===== Recherche Employé par nom =====");
+            Console.Write("Merci de saisir le nom : ");
+            string nom = Console.ReadLine();
+            Salarie s = null;
+
+        }
+
+
     }
 }
 
