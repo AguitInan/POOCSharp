@@ -13,7 +13,14 @@ namespace Exercice03Pendu.Classes
         private int nbEssai;
         private string masque;
 
-
+        public Pendu(GenerateurDeMot g)
+        {
+            generateur = g;
+            MotATrouve = g.Generer();
+            GenererMasque();
+            nbEssai = 10;
+        }
+        
 
     }
 }
