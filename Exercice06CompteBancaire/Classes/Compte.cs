@@ -6,10 +6,11 @@ namespace Exercice06CompteBancaire.Classes
 {
     internal abstract class Compte
     {
-        private string numeroCompte;
-        private double solde;
+        private string _numeroCompte;
+        private double _solde;
+        private Client _client;
         //private Utilisateur props;
-        private List<Operation> listeOperation;
+        private List<Operation> _listeOperation;
 
         public Compte()
         {
@@ -29,6 +30,12 @@ namespace Exercice06CompteBancaire.Classes
         //        }
         //    }
         //}
-        
+
+        public Compte(Client c, int t, decimal s = 0)
+        {
+
+        }
+
+
     }
 }
