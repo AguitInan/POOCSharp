@@ -7,29 +7,25 @@ namespace Exercice06CompteBancaire.Classes
     internal abstract class Compte
     {
         private string _numeroCompte;
-        private double _solde;
+        private decimal _solde;
         private Client _client;
         //private Utilisateur props;
         private List<Operation> _listeOperation;
 
-        public Compte()
+        public Compte(Client client)
         {
+            _client = client;
+            _solde = 0m;
+            _listeOperation = new();
 
         }
-        //public Compte(string numeroCompte)
-        //{
-        //    foreach (Compte compte in Journalisation.GetListeComptesBancaires())
-        //    {
-        //        if (compte.NumeroCompte == numeroCompte)
-        //        {
-        //            NumeroCompte = compte.NumeroCompte;
-        //            Props = compte.Props;
-        //            ListeOperation = compte.ListeOperation;
-        //            Solde = compte.Solde;
-        //            break;
-        //        }
-        //    }
-        //}
+
+        public Compte(Client client, decimal soldeInitial) : this(client)
+        {
+            _solde = 0m;
+
+        }
+
 
         public Compte(Client c, int t, decimal s = 0)
         {
