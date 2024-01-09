@@ -9,11 +9,11 @@ namespace Exercice06CompteBancaire.Classes
     internal class ComptePayant : Compte
     {
 
-        private int compteId;
-        private decimal coutOperation;
+        private int _compteId;
+        private decimal _coutOperation;
 
-        public decimal CoutOperation { get => coutOperation; set => coutOperation = value; }
-        public int CompteId { get => compteId; set => compteId = value; }
+        public decimal CoutOperation { get => _coutOperation; set => _coutOperation = value; }
+        public int CompteId { get => _compteId; set => _compteId = value; }
 
         public ComptePayant(Client c, decimal cOperation = 2, decimal s = 0) : base(c, Sauvegarde.Instance, s)
         {
