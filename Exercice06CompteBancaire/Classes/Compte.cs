@@ -11,6 +11,24 @@ namespace Exercice06CompteBancaire.Classes
         private Utilisateur props;
         private List<Operation> listeOperation;
 
+        public Compte()
+        {
+
+        }
+        public Compte(string numeroCompte)
+        {
+            foreach (Compte compte in Journalisation.GetListeComptesBancaires())
+            {
+                if (compte.NumeroCompte == numeroCompte)
+                {
+                    NumeroCompte = compte.NumeroCompte;
+                    Props = compte.Props;
+                    ListeOperation = compte.ListeOperation;
+                    Solde = compte.Solde;
+                    break;
+                }
+            }
+        }
         
     }
 }
