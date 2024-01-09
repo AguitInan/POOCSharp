@@ -9,7 +9,6 @@ namespace Exercice06CompteBancaire.Classes
         private string _numeroCompte;
         private decimal _solde;
         private Client _client;
-        //private Utilisateur props;
         private List<Operation> _listeOperation;
 
         public Compte(Client client)
@@ -22,7 +21,7 @@ namespace Exercice06CompteBancaire.Classes
 
         public Compte(Client client, decimal soldeInitial) : this(client)
         {
-            _solde = 0m;
+            _solde = soldeInitial;
 
         }
 

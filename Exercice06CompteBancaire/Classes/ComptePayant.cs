@@ -15,9 +15,9 @@ namespace Exercice06CompteBancaire.Classes
         public int CompteId { get => _compteId; set => _compteId = value; }
         public decimal CoutOperation { get => _coutOperation; set => _coutOperation = value; }
 
-        public ComptePayant(Client c, decimal coutOperation = 2, decimal s = 0) : base(c, coutOperation, s)
+        public ComptePayant(Client c, decimal t = 2, decimal s = 0) : base(c, t, s)
         {
-            _coutOperation = coutOperation;
+            _coutOperation = t;
         }
 
         

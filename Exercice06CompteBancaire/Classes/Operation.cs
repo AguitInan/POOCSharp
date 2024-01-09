@@ -6,7 +6,6 @@ namespace Exercice06CompteBancaire.Classes
 {
     public class Operation
     {
-        //private int numero;
         private int _id;
         private int _compteId;
         private decimal _montant;
