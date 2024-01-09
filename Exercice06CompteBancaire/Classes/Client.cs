@@ -11,6 +11,11 @@ namespace Exercice06CompteBancaire.Classes
         private string prenom;
         private string telephone;
 
+        public string Nom { get => nom; set => nom = value; }
+        public string Prenom { get => prenom; set => prenom = value; }
+        public string Telephone { get => telephone; set => telephone = value; }
+        public int Id { get => id; set => id = value; }
+
         
     }
 }
