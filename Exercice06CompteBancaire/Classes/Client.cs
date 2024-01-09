@@ -6,15 +6,15 @@ namespace Exercice06CompteBancaire.Classes
 {
     public class Client
     {
-        private int id;
-        private string nom;
-        private string prenom;
-        private string telephone;
+        private int _id;
+        private string _nom;
+        private string _prenom;
+        private string _telephone;
 
-        public string Nom { get => nom; set => nom = value; }
-        public string Prenom { get => prenom; set => prenom = value; }
-        public string Telephone { get => telephone; set => telephone = value; }
-        public int Id { get => id; set => id = value; }
+        public string Nom { get => _nom; set => _nom = value; }
+        public string Prenom { get => _prenom; set => _prenom = value; }
+        public string Telephone { get => _telephone; set => _telephone = value; }
+        public int Id { get => _id; set => _id = value; }
 
         public Client()
         {
