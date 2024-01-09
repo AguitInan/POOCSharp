@@ -12,9 +12,9 @@ namespace Exercice06CompteBancaire.Classes
         private decimal _montant;
         private static int _index = 0;
         //public int Numero { get => numero; }
-        public decimal Montant { get => _montant; }
         public int Id { get => _id; set => _id = value; }
         public int CompteId { get => _compteId; set => _compteId = value; }
+        public decimal Montant { get => _montant; }
 
         private Operation()
         {

@@ -12,12 +12,12 @@ namespace Exercice06CompteBancaire.Classes
         private int _compteId;
         private decimal _coutOperation;
 
-        public decimal CoutOperation { get => _coutOperation; set => _coutOperation = value; }
         public int CompteId { get => _compteId; set => _compteId = value; }
+        public decimal CoutOperation { get => _coutOperation; set => _coutOperation = value; }
 
-        public ComptePayant(Client c, decimal cOperation = 2, decimal s = 0) : base(c, Sauvegarde.Instance, s)
+        public ComptePayant(Client c, decimal coutOperation = 2, decimal s = 0) : base(c, coutOperation, s)
         {
-            coutOperation = cOperation;
+            _coutOperation = coutOperation;
         }
 
         
