@@ -16,6 +16,17 @@ namespace Exercice06CompteBancaire.Classes
         public int Id { get => id; set => id = value; }
         public int CompteId { get => compteId; set => compteId = value; }
 
-        
+        private Operation()
+        {
+            
+        }
+
+        public Operation(decimal m, int compteId) : this()
+        {
+            CompteId = compteId;
+            montant = m;
+        }
+
+
     }
 }
