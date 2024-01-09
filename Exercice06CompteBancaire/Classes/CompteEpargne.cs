@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Exercice06CompteBancaire.Classes
 {
-    internal class CompteEpargne
+    internal class CompteEpargne : Compte
     {
+        private int compteId;
+        private int taux;
+
+        public int Taux { get => taux; }
+        public int CompteId { get => compteId; set => compteId = value; }
+
+        
+
     }
 }
