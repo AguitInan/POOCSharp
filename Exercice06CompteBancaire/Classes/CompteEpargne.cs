@@ -16,7 +16,7 @@ namespace Exercice06CompteBancaire.Classes
         public int Taux { get => _taux; }
         public decimal Solde { get => _solde; set => _solde = value; }
 
-        public CompteEpargne(Client c, int t, decimal s = 0) : base(c, t, s)
+        public CompteEpargne(Client c, int t, decimal s = 0) : base(c, s)
         {
             _taux = t;
         }
