@@ -27,6 +27,11 @@ namespace Exercice06CompteBancaire.Classes
             Telephone = t;
         }
 
-        
+        public override string ToString()
+        {
+            return "Nom : " + Nom + "\n" +
+                "Prénom : " + Prenom + "\n" +
+                "Téléphone : " + Telephone + "\n";
+        }
     }
 }
