@@ -10,11 +10,13 @@ namespace Exercice06CompteBancaire.Classes
         private string _nom;
         private string _prenom;
         private string _telephone;
+        private List<Compte> _listeCompte;
 
+        public int Id { get => _id; set => _id = value; }
         public string Nom { get => _nom; set => _nom = value; }
         public string Prenom { get => _prenom; set => _prenom = value; }
         public string Telephone { get => _telephone; set => _telephone = value; }
-        public int Id { get => _id; set => _id = value; }
+        internal List<Compte> ListeCompte { get => _listeCompte; set => _listeCompte = value; }
 
         public Client()
         {
