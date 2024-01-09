@@ -7,14 +7,14 @@ namespace Exercice06CompteBancaire.Classes
     public class Operation
     {
         //private int numero;
-        private int id;
-        private int compteId;
-        private decimal montant;
-        private static int index = 0;
+        private int _id;
+        private int _compteId;
+        private decimal _montant;
+        private static int _index = 0;
         //public int Numero { get => numero; }
-        public decimal Montant { get => montant; }
-        public int Id { get => id; set => id = value; }
-        public int CompteId { get => compteId; set => compteId = value; }
+        public decimal Montant { get => _montant; }
+        public int Id { get => _id; set => _id = value; }
+        public int CompteId { get => _compteId; set => _compteId = value; }
 
         private Operation()
         {
@@ -24,9 +24,13 @@ namespace Exercice06CompteBancaire.Classes
         public Operation(decimal m, int compteId) : this()
         {
             CompteId = compteId;
-            montant = m;
+            _montant = m;
         }
 
-
+        public override string ToString()
+        {
+            return "Id opération : " + Id + "\n" +
+                "Montant opération : " + Montant;
+        }
     }
 }
