@@ -8,20 +8,22 @@ namespace Exercice06CompteBancaire.Classes
 {
     internal class CompteEpargne : Compte
     {
-        private int compteId;
-        private int taux;
+        private int _compteId;
+        private int _taux;
+        private decimal _solde;
 
-        public int Taux { get => taux; }
-        public int CompteId { get => compteId; set => compteId = value; }
+        public int Taux { get => _taux; }
+        public int CompteId { get => _compteId; set => _compteId = value; }
+        public decimal Solde { get => _solde; set => _solde = value; }
 
         public CompteEpargne(Client c, int t, decimal s = 0) : base(c, Sauvegarde.Instance, s)
         {
-            taux = t;
+            _taux = t;
         }
 
         public void UpdateSolde()
         {
-            solde += solde * taux / 100;
+            _solde += _solde * _taux / 100;
         }
 
     }
