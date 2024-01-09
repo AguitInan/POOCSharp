@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Exercice06CompteBancaire.Classes
 {
-    public class Operation
+    internal class Operation
     {
+        private static int _count = 0;
+
         private int _id;
         private int _compteId;
         private decimal _montant;

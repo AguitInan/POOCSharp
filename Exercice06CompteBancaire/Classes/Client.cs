@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Exercice06CompteBancaire.Classes
 {
-    public class Client
+    internal class Client
     {
+        private static int _counter = 0;
+
         private int _id;
         private string _nom;
         private string _prenom;
@@ -16,7 +18,7 @@ namespace Exercice06CompteBancaire.Classes
         public string Nom { get => _nom; set => _nom = value; }
         public string Prenom { get => _prenom; set => _prenom = value; }
         public string Telephone { get => _telephone; set => _telephone = value; }
-        internal List<Compte> ListeCompte { get => _listeCompte; set => _listeCompte = value; }
+        public List<Compte> ListeCompte { get => _listeCompte; set => _listeCompte = value; }
 
         public Client()
         {

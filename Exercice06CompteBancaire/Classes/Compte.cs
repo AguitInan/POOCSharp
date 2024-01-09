@@ -26,10 +26,10 @@ namespace Exercice06CompteBancaire.Classes
         }
 
 
-        public Compte(Client c, int t, decimal s = 0)
-        {
+        //public Compte(Client c, int t, decimal s = 0)
+        //{
 
-        }
+        //}
 
 
     }

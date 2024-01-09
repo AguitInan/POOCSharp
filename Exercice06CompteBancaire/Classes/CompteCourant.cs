@@ -8,5 +8,9 @@ namespace Exercice06CompteBancaire.Classes
 {
     internal class CompteCourant : Compte
     {
+        public CompteCourant(Client c, int t, decimal s = 0) : base(c, s)
+        {
+
+        }
     }
 }
