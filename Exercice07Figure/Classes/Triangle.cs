@@ -21,20 +21,20 @@ namespace Exercice07Figure.Classes
         public double Base { get => _base; set => _base = value; }
         public double Hauteur { get => _hauteur; set => _hauteur = value; }
 
-        public bool Deplacement(double x, double y)
-        {
-            Console.WriteLine("Déplacement du triangle par (" + x + "," + y + ") \n");
+        //public bool Deplacement(double x, double y)
+        //{
+        //    Console.WriteLine("Déplacement du triangle par (" + x + "," + y + ") \n");
 
-            Console.WriteLine("Coordonnées du triangle ABC (Base = " + _base + ", Hauteur = " + _hauteur + ") :" + "\n" +
-                "A = " + (Origine.PosX + x) + ";" + ((Origine.PosY + _hauteur / 2) + y) + "\n" +
-                "B = " + ((Origine.PosX + _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y) + "\n" +
-                "C = " + ((Origine.PosX - _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y));
+        //    Console.WriteLine("Coordonnées du triangle ABC (Base = " + _base + ", Hauteur = " + _hauteur + ") :" + "\n" +
+        //        "A = " + (Origine.PosX + x) + ";" + ((Origine.PosY + _hauteur / 2) + y) + "\n" +
+        //        "B = " + ((Origine.PosX + _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y) + "\n" +
+        //        "C = " + ((Origine.PosX - _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y));
 
-            Origine.PosX += x;
-            Origine.PosY += y;
+        //    Origine.PosX += x;
+        //    Origine.PosY += y;
 
-            return true;
-        }
+        //    return true;
+        //}
 
         public override string ToString()
         {

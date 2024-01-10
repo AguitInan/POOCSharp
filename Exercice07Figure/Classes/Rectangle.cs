@@ -22,21 +22,21 @@ namespace Exercice07Figure.Classes
         public double Largeur { get => _largeur; set => _largeur = value; }
 
 
-        public bool Deplacement(double x, double y)
-        {
-            Console.WriteLine("Déplacement du rectangle par (" + x + "," + y + ") \n");
+        //public bool Deplacement(double x, double y)
+        //{
+        //    Console.WriteLine("Déplacement du rectangle par (" + x + "," + y + ") \n");
 
-            Console.WriteLine("Coordonnées du rectangle ABCD (Longueur = " + _longueur + ", Largeur = " + _largeur + ") :" + "\n" +
-               "A = " + ((Origine.PosX - _longueur / 2) + x) + ";" + ((Origine.PosY + _longueur / 2) + y) + "\n" +
-                "B = " + ((Origine.PosX + _longueur / 2) + x) + ";" + ((Origine.PosY + _largeur / 2) + y) + "\n" +
-                "C = " + ((Origine.PosX + _longueur / 2) + x) + ";" + ((Origine.PosY - _largeur / 2) + y) + "\n" +
-                "D = " + ((Origine.PosX - _longueur / 2) + x) + ";" + ((Origine.PosY - _largeur / 2) + y));
+        //    Console.WriteLine("Coordonnées du rectangle ABCD (Longueur = " + _longueur + ", Largeur = " + _largeur + ") :" + "\n" +
+        //       "A = " + ((Origine.PosX - _longueur / 2) + x) + ";" + ((Origine.PosY + _longueur / 2) + y) + "\n" +
+        //        "B = " + ((Origine.PosX + _longueur / 2) + x) + ";" + ((Origine.PosY + _largeur / 2) + y) + "\n" +
+        //        "C = " + ((Origine.PosX + _longueur / 2) + x) + ";" + ((Origine.PosY - _largeur / 2) + y) + "\n" +
+        //        "D = " + ((Origine.PosX - _longueur / 2) + x) + ";" + ((Origine.PosY - _largeur / 2) + y));
 
-            Origine.PosX += x;
-            Origine.PosY += y;
+        //    Origine.PosX += x;
+        //    Origine.PosY += y;
 
-            return true;
-        }
+        //    return true;
+        //}
 
         public override string ToString()
         {

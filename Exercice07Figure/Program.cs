@@ -10,6 +10,8 @@
 Carre carre2 = new Carre(new Point(3,3), 2);
 Console.WriteLine(carre2);
 carre2.Deplacement(1, 3);
+Console.WriteLine(carre2);
+
 
 
 //Rectangle rectangle = new();
@@ -25,6 +27,7 @@ carre2.Deplacement(1, 3);
 Rectangle rectangle = new Rectangle(new Point(3, 2.5), 3, 5);
 Console.WriteLine(rectangle);
 rectangle.Deplacement(1, 3);
+Console.WriteLine(rectangle);
 
 
 //Triangle triangle = new();
@@ -39,3 +42,4 @@ rectangle.Deplacement(1, 3);
 Triangle triangle = new Triangle(new Point(2, 1.5), 4, 5);
 Console.WriteLine(triangle);
 triangle.Deplacement(1, 3);
+Console.WriteLine(triangle);

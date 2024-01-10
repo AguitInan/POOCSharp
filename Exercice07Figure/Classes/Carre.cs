@@ -17,21 +17,21 @@ namespace Exercice07Figure.Classes
 
         public double Cote { get => _cote; set => _cote = value; }
 
-        public bool Deplacement(double x, double y)
-        {
-            Console.WriteLine("Déplacement du carré par ("+x+ ","+y+") \n");
+        //public bool Deplacement(double x, double y)
+        //{
+        //    Console.WriteLine("Déplacement du carré par ("+x+ ","+y+") \n");
 
-            Console.WriteLine("Coordonnées du carré ABCD (Côté = " + _cote + ") :" + "\n" +
-                "A = " + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosY + _cote / 2) + y) + "\n" +
-                "B = " + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosY + _cote / 2) + y) + "\n" +
-                "C = " + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosY - _cote / 2) + y) + "\n" +
-                "D = " + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosY - _cote / 2) + y));
+        //    Console.WriteLine("Coordonnées du carré ABCD (Côté = " + _cote + ") :" + "\n" +
+        //        "A = " + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosY + _cote / 2) + y) + "\n" +
+        //        "B = " + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosY + _cote / 2) + y) + "\n" +
+        //        "C = " + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosY - _cote / 2) + y) + "\n" +
+        //        "D = " + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosY - _cote / 2) + y));
 
-            Origine.PosX += x;
-            Origine.PosY += y;
+        //    Origine.PosX += x;
+        //    Origine.PosY += y;
 
-            return true;
-        }
+        //    return true;
+        //}
 
         public override string ToString()
         {
