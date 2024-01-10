@@ -18,10 +18,10 @@ namespace Exercice07Figure.Classes
             Console.WriteLine("Déplacement du carré par ("+x+ ","+y+")");
 
             Console.WriteLine("Coordonnées du carré ABCD (Côté = " + _cote + ")" + "\n" +
-                "A =" + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosX + _cote / 2) + y) +
-                "B =" + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosX + _cote / 2) + y) +
-                "C =" + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosX - _cote / 2) + y) +
-                "D =" + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosX - _cote / 2) + y));
+                "A =" + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosY + _cote / 2) + y) +
+                "B =" + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosY + _cote / 2) + y) +
+                "C =" + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosY - _cote / 2) + y) +
+                "D =" + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosY - _cote / 2) + y));
 
             return true;
         }
@@ -29,10 +29,10 @@ namespace Exercice07Figure.Classes
         public override string ToString()
         {
             return "Coordonnées du carré ABCD (Côté = " + _cote + ")" + "\n" +
-                "A =" + (Origine.PosX - _cote/2) +";" + (Origine.PosX + _cote / 2) +
-                "B =" + (Origine.PosX + _cote / 2) + ";" + (Origine.PosX + _cote / 2) +
-                "C =" + (Origine.PosX + _cote / 2) + ";" + (Origine.PosX - _cote / 2) +
-                "D =" + (Origine.PosX - _cote / 2) + ";" + (Origine.PosX - _cote / 2);
+                "A =" + (Origine.PosX - _cote/2) +";" + (Origine.PosY + _cote / 2) +
+                "B =" + (Origine.PosX + _cote / 2) + ";" + (Origine.PosY + _cote / 2) +
+                "C =" + (Origine.PosX + _cote / 2) + ";" + (Origine.PosY - _cote / 2) +
+                "D =" + (Origine.PosX - _cote / 2) + ";" + (Origine.PosY - _cote / 2);
 
         }
     }
