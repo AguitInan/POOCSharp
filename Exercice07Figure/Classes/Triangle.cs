@@ -13,5 +13,11 @@ namespace Exercice07Figure.Classes
 
         public double Base { get => _base; set => _base = value; }
         public double Hauteur { get => _hauteur; set => _hauteur = value; }
+
+        public override string ToString()
+        {
+            return "Base du triangle: " + _base + "\n" +
+                "Hauteur du triangle : " + _hauteur;
+        }
     }
 }
