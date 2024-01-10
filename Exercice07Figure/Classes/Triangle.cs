@@ -12,17 +12,25 @@ namespace Exercice07Figure.Classes
         private double _base;
         private double _hauteur;
 
+        public Triangle(Point origine, double baseT, double hauteur) : base(origine)
+        {
+            _base = baseT;
+            _hauteur = hauteur;
+        }
+
         public double Base { get => _base; set => _base = value; }
         public double Hauteur { get => _hauteur; set => _hauteur = value; }
 
         public bool Deplacement(double x, double y)
         {
-            Console.WriteLine("Déplacement du triangle par (" + x + "," + y + ")");
+            Console.WriteLine("Déplacement du triangle par (" + x + "," + y + ") \n");
 
-            Console.WriteLine("Coordonnées du triangle ABC (Base = " + _base + ", Hauteur = " + _hauteur + ")" + "\n" +
-                "A =" + (Origine.PosX + x) + ";" + ((Origine.PosY + _hauteur / 2) + y) +
-                "B =" + ((Origine.PosX + _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y) +
-                "C =" + ((Origine.PosX - _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y));
+            // revoir calcul pour le triangle
+
+            Console.WriteLine("Coordonnées du triangle ABC (Base = " + _base + ", Hauteur = " + _hauteur + ") :" + "\n" +
+                "A = " + (Origine.PosX + x) + ";" + ((Origine.PosY + _hauteur / 2) + y) + "\n" +
+                "B = " + ((Origine.PosX + _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y) + "\n" +
+                "C = " + ((Origine.PosX - _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y));
 
             Origine.PosX += x;
             Origine.PosY += y;
@@ -32,10 +40,10 @@ namespace Exercice07Figure.Classes
 
         public override string ToString()
         {
-            return "Coordonnées du triangle ABC (Base = " + _base + ", Hauteur = " + _hauteur + ")" + "\n" +
-                "A =" + Origine.PosX + ";" + (Origine.PosX + _hauteur / 2) +
-                "B =" + (Origine.PosX + _base / 2) + ";" + (Origine.PosX - _hauteur / 2) +
-                "C =" + (Origine.PosX - _base / 2) + ";" + (Origine.PosX - _hauteur / 2);
+            return "Coordonnées du triangle ABC (Base = " + _base + ", Hauteur = " + _hauteur + ") :" + "\n" +
+                "A = " + Origine.PosX + ";" + (Origine.PosY + _hauteur / 2) + "\n" +
+                "B = " + (Origine.PosX + _base / 2) + ";" + (Origine.PosY - _hauteur / 2) + "\n" +
+                "C = " + (Origine.PosX - _base / 2) + ";" + (Origine.PosY - _hauteur / 2);
         }
     }
 }

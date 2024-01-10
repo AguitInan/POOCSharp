@@ -9,7 +9,11 @@ namespace Exercice07Figure.Classes
     internal class Carre : Figure
     {
         private double _cote;
- 
+
+        public Carre(Point origine, double cote) : base(origine)
+        {
+            _cote = cote;
+        }
 
         public double Cote { get => _cote; set => _cote = value; }
 

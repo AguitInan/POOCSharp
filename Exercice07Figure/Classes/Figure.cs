@@ -8,16 +8,26 @@ using System.Threading.Tasks;
 
 namespace Exercice07Figure.Classes
 {
-    internal abstract class Figure
+    internal abstract class Figure : IDeplacable
     {
         private Point _origine;
 
         public Point Origine { get => _origine; set => _origine = value; }
-
-        public Figure()
+        protected Figure(Point origin)
         {
-            _origine = new Point(); // Instanciation explicite
+            _origine = origin;
         }
+
+        public void Deplacement(double x, double y)
+        {
+            _origine.PosX += x;
+            _origine.PosY += y;
+        }
+
+        //public bool Deplacement(double x, double y)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
 

@@ -11,6 +11,13 @@ namespace Exercice07Figure.Classes
         private double _posX;
         private double _posY;
 
+
+        public Point(double posX, double posY)
+        {
+            _posX = posX;
+            _posY = posY;
+        }
+
         public double PosX { get => _posX; set => _posX = value; }
         public double PosY { get => _posY; set => _posY = value; }
 

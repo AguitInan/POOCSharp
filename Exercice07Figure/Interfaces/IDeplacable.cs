@@ -9,6 +9,6 @@ namespace Exercice07Figure.Interfaces
     internal interface IDeplacable
     {
         // Les méthodes écrites dans une interface sont abstraites par défaut, on a pas besoin d'écrire le mot-clé abstract manuellement
-        public bool Deplacement(double x, double y);
+        public void Deplacement(double x, double y);
     }
 }
