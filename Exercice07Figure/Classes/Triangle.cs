@@ -24,6 +24,9 @@ namespace Exercice07Figure.Classes
                 "B =" + ((Origine.PosX + _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y) +
                 "C =" + ((Origine.PosX - _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y));
 
+            Origine.PosX += x;
+            Origine.PosY += y;
+
             return true;
         }
 
