@@ -10,5 +10,8 @@ namespace Exercice07Figure.Classes
     {
         private double _longueur;
         private double _largeur;
+
+        public double Longueur { get => _longueur; set => _longueur = value; }
+        public double Largeur { get => _largeur; set => _largeur = value; }
     }
 }
