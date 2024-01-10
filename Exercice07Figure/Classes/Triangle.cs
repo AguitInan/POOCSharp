@@ -10,9 +10,20 @@ namespace Exercice07Figure.Classes
     {
         private double _base;
         private double _hauteur;
+        private Point _pointA;
+        private Point _pointB;
+        private Point _pointC;
 
         public double Base { get => _base; set => _base = value; }
         public double Hauteur { get => _hauteur; set => _hauteur = value; }
+        internal Point PointA { get => _pointA; set => _pointA = value; }
+        internal Point PointB { get => _pointB; set => _pointB = value; }
+        internal Point PointC { get => _pointC; set => _pointC = value; }
+
+        public bool Deplacement(double x, double y)
+        {
+            return true;
+        }
 
         public override string ToString()
         {
