@@ -17,7 +17,11 @@ namespace Exercice07Figure.Classes
         {
             Console.WriteLine("Déplacement du carré par ("+x+ ","+y+")");
 
-
+            Console.WriteLine("Coordonnées du carré ABCD (Côté = " + _cote + ")" + "\n" +
+                "A =" + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosX + _cote / 2) + y) +
+                "B =" + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosX + _cote / 2) + y) +
+                "C =" + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosX - _cote / 2) + y) +
+                "D =" + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosX - _cote / 2) + y));
 
             return true;
         }
