@@ -30,10 +30,6 @@ namespace Exercice07Figure.Classes
                 "C =" + (Origine.PosX + _cote / 2) + ";" + (Origine.PosX - _cote / 2) +
                 "D =" + (Origine.PosX - _cote / 2) + ";" + (Origine.PosX - _cote / 2);
 
-
-            //return "Position X : " + PosX + "\n" +
-            //    "Position Y : " + PosY;
-
         }
     }
 }

@@ -26,9 +26,9 @@ namespace Exercice07Figure.Classes
         public override string ToString()
         {
             return "Coordonnées du triangle ABC (Base = " + _base + ", Hauteur = " + _hauteur + ")" + "\n" +
-    "A =" + Origine.PosX + ";" + Origine.PosX +
-    "B =" + Origine.PosX + ";" + Origine.PosX +
-    "C =" + Origine.PosX + ";" + Origine.PosX;
+                "A =" + Origine.PosX + ";" + (Origine.PosX + _hauteur / 2) +
+                "B =" + (Origine.PosX + _base / 2) + ";" + (Origine.PosX - _hauteur / 2) +
+                "C =" + (Origine.PosX - _base / 2) + ";" + (Origine.PosX - _hauteur / 2);
         }
     }
 }
