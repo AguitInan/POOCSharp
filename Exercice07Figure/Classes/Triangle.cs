@@ -19,6 +19,10 @@ namespace Exercice07Figure.Classes
         {
             Console.WriteLine("Déplacement du triangle par (" + x + "," + y + ")");
 
+            Console.WriteLine("Coordonnées du triangle ABC (Base = " + _base + ", Hauteur = " + _hauteur + ")" + "\n" +
+                "A =" + (Origine.PosX + x) + ";" + ((Origine.PosY + _hauteur / 2) + y) +
+                "B =" + ((Origine.PosX + _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y) +
+                "C =" + ((Origine.PosX - _base / 2) + x) + ";" + ((Origine.PosY - _hauteur / 2) + y));
 
             return true;
         }
