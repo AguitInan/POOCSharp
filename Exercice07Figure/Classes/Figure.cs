@@ -8,11 +8,16 @@ using System.Threading.Tasks;
 
 namespace Exercice07Figure.Classes
 {
-    internal abstract class Figure : IDeplacable
+    internal abstract class Figure
     {
         private Point _origine;
 
-        internal Point Origine { get => _origine; set => _origine = value; }
+        public Point Origine { get => _origine; set => _origine = value; }
+
+        public Figure()
+        {
+            _origine = new Point(); // Instanciation explicite
+        }
     }
 }
 

@@ -15,13 +15,13 @@ namespace Exercice07Figure.Classes
 
         public bool Deplacement(double x, double y)
         {
-            Console.WriteLine("Déplacement du carré par ("+x+ ","+y+")");
+            Console.WriteLine("Déplacement du carré par ("+x+ ","+y+") \n");
 
-            Console.WriteLine("Coordonnées du carré ABCD (Côté = " + _cote + ")" + "\n" +
-                "A =" + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosY + _cote / 2) + y) +
-                "B =" + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosY + _cote / 2) + y) +
-                "C =" + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosY - _cote / 2) + y) +
-                "D =" + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosY - _cote / 2) + y));
+            Console.WriteLine("Coordonnées du carré ABCD (Côté = " + _cote + ") :" + "\n" +
+                "A = " + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosY + _cote / 2) + y) + "\n" +
+                "B = " + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosY + _cote / 2) + y) + "\n" +
+                "C = " + ((Origine.PosX + _cote / 2) + x) + ";" + ((Origine.PosY - _cote / 2) + y) + "\n" +
+                "D = " + ((Origine.PosX - _cote / 2) + x) + ";" + ((Origine.PosY - _cote / 2) + y));
 
             Origine.PosX += x;
             Origine.PosY += y;
@@ -31,11 +31,11 @@ namespace Exercice07Figure.Classes
 
         public override string ToString()
         {
-            return "Coordonnées du carré ABCD (Côté = " + _cote + ")" + "\n" +
-                "A =" + (Origine.PosX - _cote/2) +";" + (Origine.PosY + _cote / 2) +
-                "B =" + (Origine.PosX + _cote / 2) + ";" + (Origine.PosY + _cote / 2) +
-                "C =" + (Origine.PosX + _cote / 2) + ";" + (Origine.PosY - _cote / 2) +
-                "D =" + (Origine.PosX - _cote / 2) + ";" + (Origine.PosY - _cote / 2);
+            return "Coordonnées du carré ABCD (Côté = " + _cote + ") :" + "\n" +
+                "A = " + (Origine.PosX - _cote/2) +";" + (Origine.PosY + _cote / 2) + "\n" +
+                "B = " + (Origine.PosX + _cote / 2) + ";" + (Origine.PosY + _cote / 2) + "\n" +
+                "C = " + (Origine.PosX + _cote / 2) + ";" + (Origine.PosY - _cote / 2) + "\n" +
+                "D = " + (Origine.PosX - _cote / 2) + ";" + (Origine.PosY - _cote / 2);
 
         }
     }
