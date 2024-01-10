@@ -27,10 +27,10 @@ namespace Exercice07Figure.Classes
         public override string ToString()
         {
             return "Coordonnées du carré ABCD (Longueur = " + _longueur + ", Largeur = " + _largeur + ")" + "\n" +
-                "A =" + Origine.PosX + ";" + Origine.PosX +
-                "B =" + Origine.PosX + ";" + Origine.PosX +
-                "C =" + Origine.PosX + ";" + Origine.PosX +
-                "D =" + Origine.PosX + ";" + Origine.PosX;
+               "A =" + (Origine.PosX - _longueur / 2) + ";" + (Origine.PosX + _longueur / 2) +
+                "B =" + (Origine.PosX + _longueur / 2) + ";" + (Origine.PosX + _largeur / 2) +
+                "C =" + (Origine.PosX + _longueur / 2) + ";" + (Origine.PosX - _largeur / 2) +
+                "D =" + (Origine.PosX - _longueur / 2) + ";" + (Origine.PosX - _largeur / 2);
         }
     }
 }
