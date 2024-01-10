@@ -20,7 +20,7 @@ namespace Exercice07Figure.Classes
 
         public void Deplacement(double x, double y)
         {
-            Console.WriteLine("\nDéplacement du rectangle par (" + x + "," + y + ") \n");
+            Console.WriteLine("\nDéplacement par (" + x + "," + y + ") \n");
             Origine.PosX += x;
             Origine.PosY += y;
         }
