@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exercice07Figure.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Exercice07Figure.Classes
 {
-    internal abstract class Figure
+    internal abstract class Figure : IDeplacable
     {
         private Point _origine;
 
