@@ -11,27 +11,26 @@ namespace Exercice07Figure.Classes
     {
         private double _longueur;
         private double _largeur;
-        private Point _pointA;
-        private Point _pointB;
-        private Point _pointC;
-        private Point _pointD;
 
         public double Longueur { get => _longueur; set => _longueur = value; }
         public double Largeur { get => _largeur; set => _largeur = value; }
-        internal Point PointA { get => _pointA; set => _pointA = value; }
-        internal Point PointB { get => _pointB; set => _pointB = value; }
-        internal Point PointC { get => _pointC; set => _pointC = value; }
-        internal Point PointD { get => _pointD; set => _pointD = value; }
+
 
         public bool Deplacement(double x, double y)
         {
+            Console.WriteLine("Déplacement du rectangle par (" + x + "," + y + ")");
+
+
             return true;
         }
 
         public override string ToString()
         {
-            return "Longueur du rectangle: " + _longueur + "\n" +
-                "Longueur du rectangle : " + _largeur;
+            return "Coordonnées du carré ABCD (Longueur = " + _longueur + ", Largeur = " + _largeur + ")" + "\n" +
+                "A =" + Origine.PosX + ";" + Origine.PosX +
+                "B =" + Origine.PosX + ";" + Origine.PosX +
+                "C =" + Origine.PosX + ";" + Origine.PosX +
+                "D =" + Origine.PosX + ";" + Origine.PosX;
         }
     }
 }

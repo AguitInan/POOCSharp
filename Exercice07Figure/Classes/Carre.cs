@@ -9,25 +9,31 @@ namespace Exercice07Figure.Classes
     internal class Carre : Figure
     {
         private double _cote;
-        private Point _pointA;
-        private Point _pointB;
-        private Point _pointC;
-        private Point _pointD;
+ 
 
         public double Cote { get => _cote; set => _cote = value; }
-        internal Point PointA { get => _pointA; set => _pointA = value; }
-        internal Point PointB { get => _pointB; set => _pointB = value; }
-        internal Point PointC { get => _pointC; set => _pointC = value; }
-        internal Point PointD { get => _pointD; set => _pointD = value; }
 
         public bool Deplacement(double x, double y)
         {
+            Console.WriteLine("Déplacement du carré par ("+x+ ","+y+")");
+
+
+
             return true;
         }
 
         public override string ToString()
         {
-            return "Longueur de côté du carré : " + _cote;
+            return "Coordonnées du carré ABCD (Côté = " + _cote + ")" + "\n" +
+                "A =" + (Origine.PosX - _cote/2) +";" + (Origine.PosX + _cote / 2) +
+                "B =" + (Origine.PosX + _cote / 2) + ";" + (Origine.PosX + _cote / 2) +
+                "C =" + (Origine.PosX + _cote / 2) + ";" + (Origine.PosX - _cote / 2) +
+                "D =" + (Origine.PosX - _cote / 2) + ";" + (Origine.PosX - _cote / 2);
+
+
+            //return "Position X : " + PosX + "\n" +
+            //    "Position Y : " + PosY;
+
         }
     }
 }
