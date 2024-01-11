@@ -8,5 +8,9 @@ namespace Exercice08Pile.Classes
 {
     internal class IHM
     {
+        static void Main(string[] args)
+        {
+            
+        }
     }
 }
