@@ -8,38 +8,38 @@ namespace Exercice08Pile.Classes
 {
     internal class Pile<T>
     {
-        T[] elements;
-        int taille;
-        int compteur = 0;
+        T[] _elements;
+        int _taille;
+        int _compteur = 0;
 
         public Pile(int t)
         {
-            taille = t;
-            elements = new T[taille];
+            _taille = t;
+            _elements = new T[_taille];
         }
 
         public void Empliler(T element)
         {
-            if (compteur < taille)
+            if (_compteur < _taille)
             {
-                elements[compteur] = element;
-                compteur++;
+                _elements[_compteur] = element;
+                _compteur++;
             }
         }
 
         public void Deplier()
         {
-            if (compteur > 0)
+            if (_compteur > 0)
             {
                 Console.WriteLine("Je dépile le dernier élément...");
-                elements[compteur - 1] = default(T);
-                compteur--;
+                _elements[_compteur - 1] = default(T);
+                _compteur--;
             }
 
         }
         public T Get(int index)
         {
-            return elements[index];
+            return _elements[index];
         }
 
     }
