@@ -13,6 +13,10 @@ namespace Exercice08Pile.Classes
 
     class Pile<T>
     {
+        T[] elements;
+        int taille;
+        int compteur = 0;
+
         
 
     }
