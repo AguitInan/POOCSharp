@@ -17,6 +17,7 @@ namespace Exercice08Pile.Classes
         int taille;
         int compteur = 0;
 
+
         public Pile(int t)
         {
             taille = t;
@@ -30,9 +31,18 @@ namespace Exercice08Pile.Classes
                 elements[compteur] = element;
                 compteur++;
             }
-            
+
         }
 
-       
+        public void Deplier()
+        {
+            if (compteur > 0)
+            {
+                Console.WriteLine("Je dépile le dernier élément...");
+                elements[compteur - 1] = default(T);
+                compteur--;
+            }
+
+        }
 
     }
