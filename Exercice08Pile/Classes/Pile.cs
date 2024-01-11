@@ -6,17 +6,11 @@ using System.Threading.Tasks;
 
 namespace Exercice08Pile.Classes
 {
-    internal class Pile
-    {
-    }
-}
-
-    class Pile<T>
+    internal class Pile<T>
     {
         T[] elements;
         int taille;
         int compteur = 0;
-
 
         public Pile(int t)
         {
@@ -31,7 +25,6 @@ namespace Exercice08Pile.Classes
                 elements[compteur] = element;
                 compteur++;
             }
-
         }
 
         public void Deplier()
@@ -44,5 +37,12 @@ namespace Exercice08Pile.Classes
             }
 
         }
+        public T Get(int index)
+        {
+            return elements[index];
+        }
 
     }
+}
+
+    
