@@ -22,6 +22,12 @@ namespace Exercice08Pile.Classes
         public string Nom { get => _nom; set => _nom = value; }
         public string Prenom { get => _prenom; set => _prenom = value; }
         public int Age { get => _age; set => _age = value; }
-        
+
+
+        public override string ToString()
+        {
+            return $"Nom: {_nom}, Prénom: {_prenom}, Âge: {_age}";
+        }
+
     }
 }
