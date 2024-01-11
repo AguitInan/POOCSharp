@@ -43,9 +43,18 @@ namespace Exercice08Pile.Classes
             }
 
         }
+
         public T Get(int index)
         {
-            return _elements[index];
+            if (index >= 0 && index < _compteur)
+            {
+                return _elements[index];
+            }
+            else
+            {
+                Console.WriteLine("Index invalide");
+                return default(T);
+            }
         }
 
     }
