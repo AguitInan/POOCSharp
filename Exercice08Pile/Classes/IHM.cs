@@ -4,15 +4,15 @@ namespace Exercice08Pile.Classes
 {
     internal class IHM
     {
-        private Pile<string> pileChaine;
         private Pile<int> pileEntier;
-        private Pile<Personne> pilePersonne;
+        //private Pile<string> pileChaine;
+        //private Pile<Personne> pilePersonne;
 
         public IHM()
         {
-            pileChaine = new Pile<string>(4);
-            pileEntier = new Pile<int>(4);
-            pilePersonne = new Pile<Personne>(4);
+            pileEntier = new Pile<int>(10);
+            //pileChaine = new Pile<string>(10);
+            //pilePersonne = new Pile<Personne>(10);
         }
 
         public void Start()

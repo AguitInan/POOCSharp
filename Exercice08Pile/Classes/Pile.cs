@@ -40,11 +40,41 @@ namespace Exercice08Pile.Classes
             }
         }
 
+        //public T Get(int index)
+        //{
+        //    if (index >= 0 && index < _compteur)
+        //    {
+        //        return _elements[index];
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Index invalide.");
+        //        return default(T);
+        //    }
+        //}
+
         public T Get(int index)
         {
             if (index >= 0 && index < _compteur)
             {
-                return _elements[index];
+                T element = _elements[index];
+
+                // Décalage des éléments pour combler l'espace
+                for (int i = index; i < _compteur - 1; i++)
+                {
+                    _elements[i] = _elements[i + 1];
+                }
+
+                _compteur--;
+                _elements[_compteur] = default(T); // Nettoyage du dernier élément
+
+                // Affichage de l'élément retiré
+                Console.WriteLine($"Élément retiré à l'indice {index} : {element}");
+
+                // Affichage de l'état actuel de la pile
+                AfficherElements();
+
+                return element;
             }
             else
             {
