@@ -23,6 +23,18 @@ namespace Exercice08Pile.Classes
             pileEntier = new Pile<int>(4);
             pilePersonne = new Pile<Personne>(4);
 
+        }
+
+
+
+        public void Start()
+        {
+
+            pileChaine.Empiler("a");
+            pileChaine.Empiler("b");
+            pileChaine.Empiler("c");
+            pileChaine.Empiler("d");
+
 
             pileEntier.Empiler(1);
             pileEntier.Empiler(2);
@@ -30,17 +42,10 @@ namespace Exercice08Pile.Classes
             pileEntier.Empiler(4);
 
 
-
-        }
-
-
-
-        public void Start()
-        {
-            //pileEntier.Empiler(1);
-            //pileEntier.Empiler(2);
-            //pileEntier.Empiler(3);
-            //pileEntier.Empiler(4);
+            pilePersonne.Empiler(new Personne("INAN", "Aguit", 36));
+            pilePersonne.Empiler(new Personne("Yagami", "Iori", 25));
+            pilePersonne.Empiler(new Personne("Kusanagi", "Kyo", 23));
+            pilePersonne.Empiler(new Personne("Kusanagi", "Saisyu", 55));
 
             string choix;
             do
