@@ -20,10 +20,16 @@ namespace Exercice08Pile.Classes
 
         public void Empiler(T element)
         {
+
+            Console.WriteLine($"Taille = {_taille}  Compteur = {_compteur}");
             if (_compteur < _taille)
             {
                 _elements[_compteur] = element;
                 _compteur++;
+            }
+            else
+            {
+                Console.WriteLine("La pile est pleine !");
             }
         }
 

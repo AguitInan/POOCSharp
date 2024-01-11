@@ -42,7 +42,7 @@ namespace Exercice08Pile.Classes
             pileEntier.Empiler(4);
 
 
-            pilePersonne.Empiler(new Personne("INAN", "Aguit", 36));
+            pilePersonne.Empiler(new Personne("Inan", "Aguit", 36));
             pilePersonne.Empiler(new Personne("Yagami", "Iori", 25));
             pilePersonne.Empiler(new Personne("Kusanagi", "Kyo", 23));
             pilePersonne.Empiler(new Personne("Kusanagi", "Saisyu", 55));
@@ -56,13 +56,13 @@ namespace Exercice08Pile.Classes
                 switch (choix)
                 {
                     case "1":
-                        pileEntier.Empiler(10);
+                        ActionEmpiler();
                         break;
                     case "2":
-                        pileEntier.Depiler();
+                        ActionDepiler();
                         break;
                     case "3":
-                        pileEntier.Get(2);
+                        ActionGet();
                         break;
                     case "0":
                         //Quitter la console
@@ -75,7 +75,7 @@ namespace Exercice08Pile.Classes
 
         private void MenuPrincipal()
         {
-            Console.Clear();
+            //Console.Clear();
             Console.WriteLine("=== Menu principal ===");
             Console.WriteLine("1. Empiler");
             Console.WriteLine("2. Dépiler");
@@ -83,9 +83,33 @@ namespace Exercice08Pile.Classes
             Console.WriteLine("0. Quitter\n");
         }
 
+        private void ActionEmpiler()
+        {
+            Console.Clear();
 
+            //Console.WriteLine("---Information du client");
+            //Console.Write("Merci de saisir le nom : ");
 
+            Console.Write("Valeur à empiler : ");
+            int entier = Convert.ToInt32(Console.ReadLine());
+            pileEntier.Empiler(entier);
 
+        }
 
+        private void ActionDepiler()
+        {
+            Console.Clear();
+            pileEntier.Depiler();
+
+        }
+
+        private void ActionGet()
+        {
+            Console.Clear();
+            Console.Write("Veuillez donner un indice : ");
+            int entier = Convert.ToInt32(Console.ReadLine());
+            pileEntier.Get(entier);
+
+        }
     }
 }
