@@ -17,6 +17,14 @@ namespace Exercice08Pile.Classes
         int taille;
         int compteur = 0;
 
+        //public event Action PilePleine;
+
+        public Pile(int t)
+        {
+            taille = t;
+            elements = new T[taille];
+        }
+
         
 
     }
