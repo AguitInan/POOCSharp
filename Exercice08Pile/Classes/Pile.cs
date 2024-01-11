@@ -18,7 +18,7 @@ namespace Exercice08Pile.Classes
             _elements = new T[_taille];
         }
 
-        public void Empliler(T element)
+        public void Empiler(T element)
         {
             if (_compteur < _taille)
             {
@@ -27,7 +27,7 @@ namespace Exercice08Pile.Classes
             }
         }
 
-        public void Deplier()
+        public void Depiler()
         {
             if (_compteur > 0)
             {
