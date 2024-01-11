@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exercice08Pile.Classes
 {
@@ -20,8 +16,6 @@ namespace Exercice08Pile.Classes
 
         public void Empiler(T element)
         {
-
-            Console.WriteLine($"Taille = {_taille}  Compteur = {_compteur}");
             if (_compteur < _taille)
             {
                 _elements[_compteur] = element;
@@ -37,11 +31,13 @@ namespace Exercice08Pile.Classes
         {
             if (_compteur > 0)
             {
-                Console.WriteLine("Je dépile le dernier élément...");
-                _elements[_compteur - 1] = default(T);
                 _compteur--;
+                _elements[_compteur] = default(T);
             }
-
+            else
+            {
+                Console.WriteLine("La pile est déjà vide !");
+            }
         }
 
         public T Get(int index)
@@ -52,12 +48,18 @@ namespace Exercice08Pile.Classes
             }
             else
             {
-                Console.WriteLine("Index invalide");
+                Console.WriteLine("Index invalide.");
                 return default(T);
             }
         }
 
+        public void AfficherElements()
+        {
+            Console.WriteLine("Éléments dans la pile :");
+            for (int i = 0; i < _compteur; i++)
+            {
+                Console.WriteLine(_elements[i]);
+            }
+        }
     }
 }
-
-    
