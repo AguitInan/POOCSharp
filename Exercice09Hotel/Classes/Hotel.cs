@@ -31,6 +31,8 @@ namespace Exercice09Hotel.Classes
         public Hotel(string n)
         {
             Nom = n;
+            Clients = new List<Client>();
+            Reservations = new List<Reservation>();
 
         }
 

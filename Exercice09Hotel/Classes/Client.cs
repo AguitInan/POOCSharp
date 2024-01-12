@@ -20,6 +20,8 @@ namespace Exercice09Hotel.Classes
 
         private List<Reservation> _reservations;
 
+        private static int _compteurId = 0; // Champ statique pour garder la trace du dernier ID utilisé
+
         public int Id { get => _id; set => _id = value; }
         public string Nom { get => _nom; set => _nom = value; }
         public string Prenom { get => _prenom; set => _prenom = value; }
@@ -29,6 +31,7 @@ namespace Exercice09Hotel.Classes
 
         public Client()
         {
+            _id = ++_compteurId; // Incrémente le compteur et assigne sa valeur à l'ID du client
             Reservations = new List<Reservation>();
         }
         public Client(string n, string p, string t) : this()

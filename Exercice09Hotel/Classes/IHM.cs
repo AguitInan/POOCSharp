@@ -11,6 +11,7 @@ namespace Exercice09Hotel.Classes
     {
         Hotel _hotel;
 
+
         public void Start()
         {
 
@@ -78,6 +79,7 @@ namespace Exercice09Hotel.Classes
 
         private void MenuPrincipal()
         {
+            Console.Clear();
             Console.WriteLine("--- Menu principal ---");
             Console.WriteLine("1. Ajouter un client");
             Console.WriteLine("2. Afficher la liste des clients");
@@ -98,7 +100,11 @@ namespace Exercice09Hotel.Classes
             Console.Write("Quel est le téléphone du client : ");
             string telephone = Console.ReadLine();
             Client client = new Client(nom, prenom, telephone);
+
+            _hotel.Clients.Add(client);
+
             Console.WriteLine("Le client sauvegardé avec le numéro : " + client.Id);
+            Console.WriteLine("Client ajouté avec succès ! ");
 
             RetourMenu();
         }
@@ -109,12 +115,17 @@ namespace Exercice09Hotel.Classes
             {
                 Console.WriteLine(c);
             }
+            RetourMenu();
         }
 
 
         private void ActionAfficherReservationClient()
         {
-            ActionAfficherListeClients();
+            //ActionAfficherListeClients();
+            foreach (Client c in _hotel.Clients)
+            {
+                Console.WriteLine(c);
+            }
             Console.WriteLine("Réservations de quel client voulez-vous regarder ? Merci de saisir son id : ");
             Int32.TryParse(Console.ReadLine(), out int id);
             Client client = _hotel.RecupererClientParId(id);
