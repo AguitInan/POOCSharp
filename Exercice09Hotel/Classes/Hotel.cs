@@ -76,7 +76,10 @@ namespace Exercice09Hotel.Classes
 
 
 
-
+        public void UpdateStatutReservation()
+        {
+            
+        }
 
 
     }
