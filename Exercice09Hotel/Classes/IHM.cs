@@ -69,6 +69,7 @@ namespace Exercice09Hotel.Classes
 
         private void MenuPrincipal()
         {
+            Console.WriteLine("--- Menu principal ---");
             Console.WriteLine("1. Ajouter un client");
             Console.WriteLine("2. Afficher la liste des clients");
             Console.WriteLine("3. Afficher les réservations d'un client");
@@ -78,9 +79,19 @@ namespace Exercice09Hotel.Classes
             Console.WriteLine("0-- Quitter\n");
         }
 
-        private void ActionAjoutClient()
-        { 
+
+        private Client ActionAjoutClient()
+        {
+            Console.Write("Quel est le nom du client : ");
+            string nom = Console.ReadLine();
+            Console.Write("Quel est le prénom du client : ");
+            string prenom = Console.ReadLine();
+            Console.Write("Quel est le téléphone du client : ");
+            string telephone = Console.ReadLine();
+            return new Client(nom, prenom, telephone);
         }
+
+
         private void ActionAfficherListeClients()
         {
         }
