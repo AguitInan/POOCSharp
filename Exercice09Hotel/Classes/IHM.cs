@@ -177,7 +177,8 @@ namespace Exercice09Hotel.Classes
 
         private void RetourMenu()
         {
-            
+            Console.WriteLine("Appuyez sur Entrée pour retourner au menu");
+            Console.ReadLine();
         }
 
     }
