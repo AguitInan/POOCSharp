@@ -6,17 +6,19 @@ namespace Exercice09Hotel.Classes
 {
     internal class Reservation
     {
-        private int id;
-        private DateTime dateDebut;
-        private DateTime dateFin;
-        private StatutReservation statut;
-        private Client client;
+        private int _id;
+        private DateTime _dateDebut;
+        private DateTime _dateFin;
+        private StatutReservation _statut;
+        private List<Chambre> _chambres;
+        private Client _client;
 
-        public int Id { get => id; set => id = value; }
-        public DateTime DateDebut { get => dateDebut; set => dateDebut = value; }
-        public DateTime DateFin { get => dateFin; set => dateFin = value; }
-        public Client Client { get => client; set => client = value; }
-        public StatutReservation Statut { get => statut; set => statut = value; }
+        public int Id { get => _id; set => _id = value; }
+        public DateTime DateDebut { get => _dateDebut; set => _dateDebut = value; }
+        public DateTime DateFin { get => _dateFin; set => _dateFin = value; }
+        public List<Chambre> Chambres { get => _chambres; set => _chambres = value; }
+        public Client Client { get => _client; set => _client = value; }
+        public StatutReservation Statut { get => _statut; set => _statut = value; }
 
         public Reservation()
         {
