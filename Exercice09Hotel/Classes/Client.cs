@@ -27,7 +27,19 @@ namespace Exercice09Hotel.Classes
 
         public List<Reservation> Reservations { get => reservations; set => reservations = value; }
 
-        
+        public Client()
+        {
+            //Reservations = new List<Reservation>();
+        }
+        public Client(string n, string p, string t) : this()
+        {
+            Nom = n;
+            Prenom = p;
+            Telephone = t;
+        }
+
+
+
 
 
     }
