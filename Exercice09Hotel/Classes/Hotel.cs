@@ -13,5 +13,8 @@ namespace Exercice09Hotel.Classes
         private List<Chambre> _chambres;
         private List<Reservation> _reservations;
 
+        internal List<Client> Clients { get => _clients; set => _clients = value; }
+        internal List<Chambre> Chambres { get => _chambres; set => _chambres = value; }
+        internal List<Reservation> Reservations { get => _reservations; set => _reservations = value; }
     }
 }
