@@ -26,5 +26,9 @@ namespace Exercice09Hotel.Classes
 
     }
 
-
+    enum StatutReservation
+    {
+        Valide,
+        Annule,
+    }
 }
