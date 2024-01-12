@@ -24,7 +24,7 @@ namespace Exercice09Hotel.Classes
             do
             {
                 bool valid = false;
-                Console.WriteLine("========== Gestion des hotels =========");
+                Console.WriteLine("========== Gestion de l'hotel =========");
                 MenuPrincipal();
                 Console.Write("Votre choix : ");
                 choix = Console.ReadLine();

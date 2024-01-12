@@ -63,7 +63,16 @@ namespace Exercice09Hotel.Classes
         }
 
 
-
+        public void RecupererReservationClient(Client client)
+        {
+            foreach (Reservation r in Reservations)
+            {
+                if (r.Client.Id == client.Id)
+                {
+                    client.Reservations.Add(r);
+                }
+            }
+        }
 
 
 
