@@ -78,6 +78,25 @@ namespace Exercice09Hotel.Classes
             Console.WriteLine("0-- Quitter\n");
         }
 
+        private void ActionAjoutClient()
+        { 
+        }
+        private void ActionAfficherListeClients()
+        {
+        }
+        private void ActionAfficherReservationClient()
+        {
+        }
+        private void ActionAjouterReservation()
+        {
+        }
+        private void ActionAnnulerReservation()
+        {
+        }
+        private void ActionAfficherListeReservations()
+        {
+        }
+
 
     }
 }
