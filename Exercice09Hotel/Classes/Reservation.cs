@@ -10,7 +10,6 @@ namespace Exercice09Hotel.Classes
         private DateTime dateDebut;
         private DateTime dateFin;
         private StatutReservation statut;
-
         private Client client;
 
         public int Id { get => id; set => id = value; }
@@ -24,6 +23,14 @@ namespace Exercice09Hotel.Classes
 
         }
 
+        public override string ToString()
+        {
+            return "Numero : " + Id + " " +
+                "Date de début : " + DateDebut + " " +
+                "Date de Fin : " + DateFin + " " +
+                "Satut " + Statut + "\n" +
+                "Client : " + Client.ToString();
+        }
     }
 
     enum StatutReservation
