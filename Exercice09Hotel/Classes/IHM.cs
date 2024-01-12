@@ -148,6 +148,10 @@ namespace Exercice09Hotel.Classes
 
         private void ActionAnnulerReservation()
         {
+            ActionAfficherListeReservations();
+            Console.WriteLine("Quelle réservation voulez-vous annuler ? Merci de saisir son id : ");
+            Int32.TryParse(Console.ReadLine(), out int id);
+            Reservation reservation = hotel.RecupererReservationParId(id);
             
         }
 
