@@ -19,7 +19,11 @@ namespace Exercice09Hotel.Classes
         public Client Client { get => client; set => client = value; }
         public StatutReservation Statut { get => statut; set => statut = value; }
 
-       
+        public Reservation()
+        {
+
+        }
+
     }
 
 
