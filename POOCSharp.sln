@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice05SalarieHeritage",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice07Figure", "Exercice07Figure\Exercice07Figure.csproj", "{D4DF21F2-9354-44C9-95A3-A847D452B70E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice08Pile", "Exercice08Pile\Exercice08Pile.csproj", "{ED3870D7-7837-4DA0-A096-FB37C0ABEDBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice08Pile", "Exercice08Pile\Exercice08Pile.csproj", "{ED3870D7-7837-4DA0-A096-FB37C0ABEDBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice09Hotel", "Exercice09Hotel\Exercice09Hotel.csproj", "{817D82D0-F96B-4A65-8607-3FEA2EE2723F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{ED3870D7-7837-4DA0-A096-FB37C0ABEDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED3870D7-7837-4DA0-A096-FB37C0ABEDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED3870D7-7837-4DA0-A096-FB37C0ABEDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{817D82D0-F96B-4A65-8607-3FEA2EE2723F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817D82D0-F96B-4A65-8607-3FEA2EE2723F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817D82D0-F96B-4A65-8607-3FEA2EE2723F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817D82D0-F96B-4A65-8607-3FEA2EE2723F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

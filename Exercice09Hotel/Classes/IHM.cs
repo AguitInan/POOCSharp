@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exercice09Hotel.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,17 @@ namespace Exercice09Hotel.Classes
 {
     internal class IHM
     {
+        Hotel hotel;
 
         public void Start()
         {
+
+            Console.Write("Quel est le nom de l'hotel : ");
+            string nom = Console.ReadLine();
+            hotel = new Hotel(nom);
+            MenuPrincipal();
+
+
             string choix = "";
             do
             {
@@ -80,7 +89,7 @@ namespace Exercice09Hotel.Classes
         }
 
 
-        private Client ActionAjoutClient()
+        private void ActionAjoutClient()
         {
             Console.Write("Quel est le nom du client : ");
             string nom = Console.ReadLine();
@@ -88,26 +97,49 @@ namespace Exercice09Hotel.Classes
             string prenom = Console.ReadLine();
             Console.Write("Quel est le téléphone du client : ");
             string telephone = Console.ReadLine();
-            return new Client(nom, prenom, telephone);
-        }
+            Client client = new Client(nom, prenom, telephone);
+            Console.WriteLine("Le client sauvegardé avec le numéro : " + client.Id);
 
+            RetourMenu();
+        }
 
         private void ActionAfficherListeClients()
         {
-        }
-        private void ActionAfficherReservationClient()
-        {
-        }
-        private void ActionAjouterReservation()
-        {
-        }
-        private void ActionAnnulerReservation()
-        {
-        }
-        private void ActionAfficherListeReservations()
-        {
+            foreach (Client c in hotel.Clients)
+            {
+                Console.WriteLine(c);
+            }
         }
 
+
+        private void ActionAfficherReservationClient()
+        {
+            
+        }
+
+        private void ActionAjouterReservation()
+        {
+            
+        }
+
+
+
+        private void ActionAnnulerReservation()
+        {
+            
+        }
+
+
+        private void ActionAfficherListeReservations()
+        {
+            
+        }
+
+        private void RetourMenu()
+        {
+           
+        }
 
     }
 }
+
