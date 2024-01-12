@@ -38,8 +38,13 @@ namespace Exercice09Hotel.Classes
             Telephone = t;
         }
 
-
-
+        public override string ToString()
+        {
+            return "Id : " + Id + " " +
+                "Nom : " + Nom + " " +
+                "Prénom : " + Prenom + " " +
+                "Téléphone : " + Telephone;
+        }
 
 
     }
