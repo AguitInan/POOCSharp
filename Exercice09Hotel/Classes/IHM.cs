@@ -133,7 +133,15 @@ namespace Exercice09Hotel.Classes
 
         private void ActionAjouterReservation()
         {
-            
+            ActionAfficherListeClients();
+            Console.WriteLine("Pour quel client voulez-vous faire la réservation ? Merci de saisir son id : ");
+            Int32.TryParse(Console.ReadLine(), out int id);
+            Client client = hotel.RecupererClientParId(id);
+
+            Reservation reservation = new Reservation() { Client = client, Statut = StatutReservation.Fini };
+            client.Reservations.Add(reservation);
+            Console.WriteLine("La réservation a été sauvgardée avec le numéro : " + reservation.Id);
+            RetourMenu();
         }
 
 
@@ -149,7 +157,10 @@ namespace Exercice09Hotel.Classes
             
         }
 
-
+        private void RetourMenu()
+        {
+            
+        }
 
     }
 }
