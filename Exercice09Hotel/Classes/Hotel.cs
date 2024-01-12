@@ -48,7 +48,19 @@ namespace Exercice09Hotel.Classes
             return client;
         }
 
-
+        public Reservation RecupererReservationParId(int id)
+        {
+            Reservation reservation = null;
+            foreach (Reservation r in Reservations)
+            {
+                if (r.Id == id)
+                {
+                    reservation = r;
+                    break;
+                }
+            }
+            return reservation;
+        }
 
 
 
