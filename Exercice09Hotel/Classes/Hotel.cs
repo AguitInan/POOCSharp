@@ -34,6 +34,26 @@ namespace Exercice09Hotel.Classes
 
         }
 
+        public Client RecupererClientParId(int id)
+        {
+            Client client = null;
+            foreach (Client c in Clients)
+            {
+                if (c.Id == id)
+                {
+                    client = c;
+                    break;
+                }
+            }
+            return client;
+        }
+
+
+
+
+
+
+
 
 
 

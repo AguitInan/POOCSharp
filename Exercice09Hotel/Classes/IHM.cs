@@ -16,7 +16,7 @@ namespace Exercice09Hotel.Classes
 
             Console.Write("Quel est le nom de l'hotel : ");
             string nom = Console.ReadLine();
-            hotel = new Hotel(nom);
+            _hotel = new Hotel(nom);
             MenuPrincipal();
 
 
@@ -183,4 +183,3 @@ namespace Exercice09Hotel.Classes
 
     }
 }
-
