@@ -9,7 +9,7 @@ namespace Exercice09Hotel.Classes
 {
     internal class IHM
     {
-        Hotel hotel;
+        Hotel _hotel;
 
         public void Start()
         {
@@ -105,7 +105,7 @@ namespace Exercice09Hotel.Classes
 
         private void ActionAfficherListeClients()
         {
-            foreach (Client c in hotel.Clients)
+            foreach (Client c in _hotel.Clients)
             {
                 Console.WriteLine(c);
             }
@@ -117,9 +117,9 @@ namespace Exercice09Hotel.Classes
             ActionAfficherListeClients();
             Console.WriteLine("Réservations de quel client voulez-vous regarder ? Merci de saisir son id : ");
             Int32.TryParse(Console.ReadLine(), out int id);
-            Client client = hotel.RecupererClientParId(id);
+            Client client = _hotel.RecupererClientParId(id);
             Console.WriteLine(client);
-            hotel.RecupererReservationClient(client);
+            _hotel.RecupererReservationClient(client);
             if (client.Reservations.Count == 0)
             {
                 Console.WriteLine("Aucune reservation");
@@ -136,7 +136,7 @@ namespace Exercice09Hotel.Classes
             ActionAfficherListeClients();
             Console.WriteLine("Pour quel client voulez-vous faire la réservation ? Merci de saisir son id : ");
             Int32.TryParse(Console.ReadLine(), out int id);
-            Client client = hotel.RecupererClientParId(id);
+            Client client = _hotel.RecupererClientParId(id);
 
             Reservation reservation = new Reservation() { Client = client, Statut = StatutReservation.Fini };
             client.Reservations.Add(reservation);
@@ -151,11 +151,11 @@ namespace Exercice09Hotel.Classes
             ActionAfficherListeReservations();
             Console.WriteLine("Quelle réservation voulez-vous annuler ? Merci de saisir son id : ");
             Int32.TryParse(Console.ReadLine(), out int id);
-            Reservation reservation = hotel.RecupererReservationParId(id);
+            Reservation reservation = _hotel.RecupererReservationParId(id);
             if (reservation != null)
             {
                 reservation.Statut = StatutReservation.Annulé;
-                hotel.UpdateStatutReservation();
+                _hotel.UpdateStatutReservation();
                 Console.WriteLine("La réservation a été annulée");
             }
             else
@@ -169,7 +169,7 @@ namespace Exercice09Hotel.Classes
 
         private void ActionAfficherListeReservations()
         {
-            foreach (Reservation r in hotel.Reservations)
+            foreach (Reservation r in _hotel.Reservations)
             {
                 Console.WriteLine(r);
             }
