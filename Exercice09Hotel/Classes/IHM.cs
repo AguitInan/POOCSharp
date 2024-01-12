@@ -152,7 +152,18 @@ namespace Exercice09Hotel.Classes
             Console.WriteLine("Quelle réservation voulez-vous annuler ? Merci de saisir son id : ");
             Int32.TryParse(Console.ReadLine(), out int id);
             Reservation reservation = hotel.RecupererReservationParId(id);
-            
+            if (reservation != null)
+            {
+                reservation.Statut = StatutReservation.Annulé;
+                hotel.UpdateStatutReservation();
+                Console.WriteLine("La réservation a été annulée");
+            }
+            else
+            {
+                Console.WriteLine("Aucune reservation avec cet id");
+            }
+
+            RetourMenu();
         }
 
 
