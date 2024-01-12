@@ -10,22 +10,22 @@ namespace Exercice09Hotel.Classes
 {
     internal class Client
     {
-        private int id;
+        private int _id;
 
-        private string nom;
+        private string _nom;
 
-        private string prenom;
+        private string _prenom;
 
-        private string telephone;
+        private string _telephone;
 
-        private List<Reservation> reservations;
+        private List<Reservation> _reservations;
 
-        public int Id { get => id; set => id = value; }
-        public string Nom { get => nom; set => nom = value; }
-        public string Prenom { get => prenom; set => prenom = value; }
-        public string Telephone { get => telephone; set => telephone = value; }
+        public int Id { get => _id; set => _id = value; }
+        public string Nom { get => _nom; set => _nom = value; }
+        public string Prenom { get => _prenom; set => _prenom = value; }
+        public string Telephone { get => _telephone; set => _telephone = value; }
 
-        public List<Reservation> Reservations { get => reservations; set => reservations = value; }
+        public List<Reservation> Reservations { get => _reservations; set => _reservations = value; }
 
         public Client()
         {
