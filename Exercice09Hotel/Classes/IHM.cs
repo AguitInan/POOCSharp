@@ -169,7 +169,10 @@ namespace Exercice09Hotel.Classes
 
         private void ActionAfficherListeReservations()
         {
-            
+            foreach (Reservation r in hotel.Reservations)
+            {
+                Console.WriteLine(r);
+            }
         }
 
         private void RetourMenu()
