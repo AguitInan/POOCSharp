@@ -18,7 +18,7 @@ namespace Exercice09Hotel.Classes
 
         private string telephone;
 
-        //private List<Reservation> reservations;
+        private List<Reservation> reservations;
 
         public int Id { get => id; set => id = value; }
         public string Nom { get => nom; set => nom = value; }
@@ -29,7 +29,7 @@ namespace Exercice09Hotel.Classes
 
         public Client()
         {
-            //Reservations = new List<Reservation>();
+            Reservations = new List<Reservation>();
         }
         public Client(string n, string p, string t) : this()
         {
