@@ -114,7 +114,21 @@ namespace Exercice09Hotel.Classes
 
         private void ActionAfficherReservationClient()
         {
-            
+            ActionAfficherListeClients();
+            Console.WriteLine("Réservations de quel client voulez-vous regarder ? Merci de saisir son id : ");
+            Int32.TryParse(Console.ReadLine(), out int id);
+            Client client = hotel.RecupererClientParId(id);
+            Console.WriteLine(client);
+            hotel.RecupererReservationClient(client);
+            if (client.Reservations.Count == 0)
+            {
+                Console.WriteLine("Aucune reservation");
+            }
+            foreach (Reservation r in client.Reservations)
+            {
+                Console.WriteLine(r);
+            }
+            RetourMenu();
         }
 
         private void ActionAjouterReservation()
@@ -135,10 +149,7 @@ namespace Exercice09Hotel.Classes
             
         }
 
-        private void RetourMenu()
-        {
-           
-        }
+
 
     }
 }
